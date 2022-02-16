@@ -16,10 +16,9 @@
             <div class="container">
                 <h2 class="logo">PASTELFLIX</h2>
                 <nav>
-                    <a href="">Início</a>
-                    <a href="">Filmes</a>
-                    <a href="">Séries</a>
-                    <a href="">Documentários</a>
+                    <button class="btn" id="selector-all"> Início </button>
+                    <button class="btn" id="selector-movie"> Filmes </button>
+                    <button class="btn" id="selector-series"> Séries </button>
                 </nav>
             </div>
         </header>
@@ -41,7 +40,7 @@
             </div>
         </main>
 
-        <div class="carrosel-filmes">
+        <div class="carrosel-filmes movie" id="movie-01">
             <h2 class="title">OS MELHORES DE ADAM SANDLER</h2>
             <div class="owl-carousel owl-theme">
                 <div class="item"> <img class="box-filme" src="./img/filme/filme-01.jpg" alt=""> </div>
@@ -57,7 +56,7 @@
             </div>
         </div>
 
-        <div class="carrosel-filmes">
+        <div class="carrosel-filmes" id="movie-02">
             <h2 class="title">OS MELHORES DE KEVIN JAMES</h2>
             <div class="owl-carousel owl-theme">
                 <div class="item"> <img class="box-filme" src="./img/filme/filme-11.jpg" alt=""> </div>
@@ -74,7 +73,7 @@
             </div>
         </div>
 
-        <div class="carrosel-filmes">
+        <div class="carrosel-filmes" id="serie">
             <h2 class="title">SÉRIES</h2>
             <div class="owl-carousel owl-theme">
                 <div class="item"> <img class="box-filme" src="./img/series/serie-01.jpg" alt=""> </div>
@@ -94,5 +93,6 @@
         <script src="./js/owl/jquery.min.js"></script>
         <script src="./js/owl/owl.carousel.min.js"></script>
         <script src="./js/owl/main.js"></script>
+        <script src="./js/owl/hide.js"></script>
     </body>
 </html>

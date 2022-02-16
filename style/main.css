@@ -3,6 +3,14 @@
     --preto: #141414;
 }
 
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 100;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -29,15 +37,24 @@ header .logo{
     font-size: 40px;
 }
 
-header nav a{
+header nav button{
     text-decoration: none;
     color: #aaa;
     margin-right: 10px;
 }
 
-header nav a:hover{
+header nav button:hover{
     color: #fff;
-    font-size: 20px;
+    font-size: 19px;
+}
+
+.btn{
+    background-color: var(--preto);
+    border: none;
+    color: #aaa;
+    font-size: 18px;
+    margin-left: 0px;
+    margin-right: 35px;
 }
 
 /* Filme/Série Principal */
@@ -45,7 +62,7 @@ header nav a:hover{
     font-size: 16px;
     background: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0,0,0,.50) 100%), url('../img/filme/o-mentiroso.jpg');
 
-    height: 400px;
+    height: 600px;
     background-size: cover;
 
     display: flex;
@@ -95,9 +112,9 @@ header nav a:hover{
 
 /* Carrosel */
 
-.box-filme{
-    height: 25%;
-    width: 25%;
+.item{
+    height: 80%;
+    width: 80%;
     
 }
 
@@ -113,7 +130,11 @@ header nav a:hover{
     margin-bottom: 8px;
 }
 
-pastel {
+.pastel {
     color: aqua;
 
+}
+
+.hide{
+    display: none;
 }
